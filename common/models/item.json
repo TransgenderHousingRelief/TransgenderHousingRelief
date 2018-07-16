@@ -1,0 +1,22 @@
+{
+  "name": "Item",
+  "base": "Node",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "tags": {
+      "type": [
+        "string"
+      ]
+    },
+    "body": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

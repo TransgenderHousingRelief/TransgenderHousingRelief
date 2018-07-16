@@ -1,0 +1,29 @@
+{
+  "name": "Node",
+  "base": "Content",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "container": {
+      "type": "belongsTo",
+      "model": "Node",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

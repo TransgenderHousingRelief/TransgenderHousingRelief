@@ -1,0 +1,34 @@
+{
+  "name": "Listing",
+  "base": "Content",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "tags": {
+      "type": [
+        "string"
+      ]
+    },
+    "location": {
+      "type": "geopoint"
+    },
+    "availability": {
+      "type": "object"
+    },
+    "price": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

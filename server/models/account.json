@@ -1,0 +1,46 @@
+{
+  "name": "Account",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "profilePic": {
+      "type": "string"
+    },
+    "createdOn": {
+      "type": "date",
+      "required": true,
+      "defaultFn": "now"
+    },
+    "preferences": {
+      "type": "object"
+    },
+    "blockedUsers": {
+      "type": [
+        "User"
+      ]
+    },
+    "savedListings": {
+      "type": [
+        "Listing"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {
+    "ownedBy": {
+      "type": "belongsTo",
+      "model": "User"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

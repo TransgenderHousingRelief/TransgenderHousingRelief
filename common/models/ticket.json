@@ -1,0 +1,34 @@
+{
+  "name": "Ticket",
+  "base": "Content",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "category": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string"
+    },
+    "notes": {
+      "type": [
+        "object"
+      ]
+    },
+    "replyTo": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "assignedTo": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
